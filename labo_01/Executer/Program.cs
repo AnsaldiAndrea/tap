@@ -13,12 +13,10 @@ namespace Executer
             foreach (var type in a.GetTypes())
             {
                 if (!type.IsClass) continue;
+                var instance = Activator.CreateInstance(type);
                 foreach (var method in type.GetMethods())
                 {
                     var attributes = method.GetCustomAttributes<ExecuteMe>(false);
-                    if (!attributes.Any()) continue;
-                    Console.WriteLine(method.Name);
-                    var instance = Activator.CreateInstance(type);
                     foreach (var attr in attributes)
                     {
                         method.Invoke(instance, attr.GetArguments());
