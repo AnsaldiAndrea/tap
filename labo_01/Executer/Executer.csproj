@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MyLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\ansal\source\repos\Executer\MyLibrary\bin\Debug\MyLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,10 +56,6 @@
     <ProjectReference Include="..\MyAttribute\MyAttribute.csproj">
       <Project>{5df2ae6c-cc9e-4c0c-bc2c-9b579f3b3c07}</Project>
       <Name>MyAttribute</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MyLibrary\MyLibrary.csproj">
-      <Project>{da25d486-2b1e-4ce9-83a2-cd70f96087f9}</Project>
-      <Name>MyLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

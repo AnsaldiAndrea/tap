@@ -30,5 +30,12 @@ namespace MyLibrary
         {
             Console.WriteLine("MTest");
         }
+
+        [ExecuteMe("tre")]
+        [ExecuteMe]
+        public void M1024(int i)
+        {
+            Console.WriteLine("M1024 i={0}",i);
+        }
     }
 }

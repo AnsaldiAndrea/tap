@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Reflection;
 using MyAttribute;
 
@@ -13,14 +12,34 @@ namespace Executer
             foreach (var type in a.GetTypes())
             {
                 if (!type.IsClass) continue;
-                var instance = Activator.CreateInstance(type);
-                foreach (var method in type.GetMethods())
+                var className = type.FullName;
+                try
                 {
-                    var attributes = method.GetCustomAttributes<ExecuteMe>(false);
-                    foreach (var attr in attributes)
+                    var instance = Activator.CreateInstance(type);
+                    foreach (var method in type.GetMethods())
                     {
-                        method.Invoke(instance, attr.GetArguments());
+                        var methodName = $"{className}.{method.Name}";
+                        var attributes = method.GetCustomAttributes<ExecuteMe>(false);
+                        foreach (var attr in attributes)
+                        {
+                            try
+                            {
+                                method.Invoke(instance, attr.GetArguments());
+                            }
+                            catch (ArgumentException)
+                            {
+                                Console.WriteLine("Impossibile esegure il metodo {0} perchè il uno o più paramentri forniti sono di tipo sbagliato", methodName);
+                            }
+                            catch (TargetParameterCountException)
+                            {
+                                Console.WriteLine("Impossibile esegure il metodo {0} perchè il numero di parametri fornito è sbagliate", methodName);
+                            }
+                        }
                     }
+                }
+                catch (MissingMethodException)
+                {
+                    Console.WriteLine("Inpossibile instanziare la classe {0} perchè non implementa il costruttore di default",className);
                 }
             }
             Console.ReadLine();

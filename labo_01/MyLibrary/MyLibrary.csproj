@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pluto.cs" />
     <Compile Include="Pippo.cs" />
     <Compile Include="Foo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
