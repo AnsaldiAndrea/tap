@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "TAP_lab02\DependencyInjection.csproj", "{ED8056A2-D68A-487A-9862-B131338EE303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSenderInterfaces", "EmailSenderInterfaces\EmailSenderInterfaces.csproj", "{380EBCB7-29F4-4257-B940-54994E2129D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSenderImplementation1", "EmailSenderImplementation1\EmailSenderImplementation1.csproj", "{140C290E-02A2-40B2-9D63-458CEB94FA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSenderImplementation2", "EmailSenderImplementation2\EmailSenderImplementation2.csproj", "{D41EE236-B36F-4A59-A019-B6FE6A5F21D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyDependencyInjectionContainer", "TinyDependencyInjectionContainer\TinyDependencyInjectionContainer.csproj", "{4FE7154E-6F58-4141-8056-23F081A555E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B58CC9EE-EA09-49C6-BD01-338AFE0D07C0}"
+	ProjectSection(SolutionItems) = preProject
+		Config.txt = Config.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED8056A2-D68A-487A-9862-B131338EE303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8056A2-D68A-487A-9862-B131338EE303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8056A2-D68A-487A-9862-B131338EE303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8056A2-D68A-487A-9862-B131338EE303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380EBCB7-29F4-4257-B940-54994E2129D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380EBCB7-29F4-4257-B940-54994E2129D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380EBCB7-29F4-4257-B940-54994E2129D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380EBCB7-29F4-4257-B940-54994E2129D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140C290E-02A2-40B2-9D63-458CEB94FA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140C290E-02A2-40B2-9D63-458CEB94FA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140C290E-02A2-40B2-9D63-458CEB94FA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140C290E-02A2-40B2-9D63-458CEB94FA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D41EE236-B36F-4A59-A019-B6FE6A5F21D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41EE236-B36F-4A59-A019-B6FE6A5F21D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41EE236-B36F-4A59-A019-B6FE6A5F21D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41EE236-B36F-4A59-A019-B6FE6A5F21D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE7154E-6F58-4141-8056-23F081A555E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE7154E-6F58-4141-8056-23F081A555E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE7154E-6F58-4141-8056-23F081A555E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE7154E-6F58-4141-8056-23F081A555E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9F86946-7415-4F83-AACE-849D8BD08442}
+	EndGlobalSection
+EndGlobal
